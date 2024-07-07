@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: block;
+}
+
+.class {
+    background: #ff0000;
+    color: #000000;
+    padding: 20px;
+    border: 5px hsl(0, 0%, 0%) solid;
+    margin: 20px;
+}
+/* Margin collapsing, its just 20px of margin */
+#id {
+    background: url("favicon.png");
+    color: #ffffff;
+    padding: 20px;
+    border: 5px hsl(0, 0%, 0%) solid;
+    margin: 0px;
+    width: 50%;
+    height: 300px;
+}
+
+.main-header {
+    width: 100%;
+    background: #2ddf5c;
+    padding: 8px 16px;
+}
+
+.main-header-brand {
+    color: #0e4f1f;
+    text-decoration: none;
+}
+
+.main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 49px);
+    vertical-align: middle;
+}
+
+.main-nav-items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav-item {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-nav-item a {
+    text-decoration: none;
+    color: #0e4f1f;
+    font-weight: bold;
+    padding: 3px 0;
+}
+
+/* Pseudo classes :*/
+.main-nav-item a:hover {
+    color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+} 
+.main-nav-item a:active {
+    color: #4040ff;
+    border-bottom: 3px solid #4040ff;
+}
+/* Pseudo elements */
+h1::first-line {
+    color: #000080;
+    font-size: 30px;
+}
+/* Grouping with comma*/
+h1::before, 
+h1::after {
+    content: "*";
+    color: #00ff00;
+}
+
+.main-nav-item--cta a {
+    color: #ffffff;
+    background: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.main-nav-item--cta a:hover,
+.main-nav-item--cta a:active
+ {
+    color: #ff1b68;
+    background: #ffffff;
+    border: none;
+}
