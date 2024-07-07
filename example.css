@@ -1,0 +1,31 @@
+/* Prioridad 5 - * TODO */
+* {
+    color: #808080;
+}
+/* Prioridad 4 - <TAG> */
+h1 {
+    color: #ff0000;
+}
+/* Prioridad 3 - . CLASS & [attribute] */
+.class {
+    color: #ffff00;
+}
+/* Prioridad 2 - # ID */
+#id {
+    color: #00ff00;
+}
+/* Prioridad 1 - style="(INLINE)" */
+
+/* CRITERIO DE MISMA PRIORIDAD */
+
+/* ⬆️👆 ARRIBA MENOR PRIORIDAD */
+/* ⬇️👇 ABAJO MAYOR PRIORIDAD */
+
+/* MENOR PRIORIDAD CON ESTILOS HEREDADOS */
+/* MISMA PRORIDAD CON inherit */
+
+body {
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
