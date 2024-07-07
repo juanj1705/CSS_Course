@@ -29,3 +29,27 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
+/* COMBINATORS */
+
+/* GENERAL SIBLING */
+h1 ~ p {
+    /*Aplica al p con un h1 antes dentro del tag*/
+    color: #808000;
+}
+/* ADJACENT SIBLING */
+h1 + p {
+    /*Aplica al p con un h1 justo antes dentro del tag*/
+    color: #800000;
+}
+
+/* DESCENDANT SIBLING */
+div p {
+    /*Aplica al p como hijo directo o lejano del div*/
+    color: #000080;
+}
+/* CHILD SIBLING */
+div > p {
+    /*Aplica al p como hijo directo del div*/
+    color: #008000;
+}
