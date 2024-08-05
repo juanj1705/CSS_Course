@@ -1,2 +1,2 @@
-# css-course
+# course-css
 CSS styles course example.
